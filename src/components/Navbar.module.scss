@@ -28,8 +28,12 @@
     background-color: #d8dee9;
   }
   :last-child {
-    position: absolute;
     margin-left: auto;
+  }
+  @media (prefers-color-scheme: light) {
+    :last-child {
+      color: rgb(180, 180, 180);
+    }
   }
 }
 .Navbar > * {
@@ -38,4 +42,11 @@
   justify-content: center;
   height: 100%;
   aspect-ratio: 1/1;
+}
+@media (prefers-color-scheme: light) {
+  .Navbar {
+    background-color: #fff;
+    border-bottom: #141414;
+    color: rgb(39, 39, 39);
+  }
 }

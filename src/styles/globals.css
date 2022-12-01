@@ -32,3 +32,12 @@ a {
     background: black;
   }
 }
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: white;
+  }
+  body {
+    color: #121212;
+    background: #d8dee9;
+  }
+}
