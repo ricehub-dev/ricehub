@@ -2,42 +2,40 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   height: 4rem;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: #141414;
   border-bottom: solid 2px #d8dee9;
-  padding: 0;
-  margin: 0;
-  background-color: #181818;
-  z-index: 3;
-  ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    height: 100%;
-    width: 100%;
-    padding: 1.1rem;
-    color: #fff;
-    :first-child {
-      font-family: "JetBrains Mono", monospace;
-      font-weight: 700;
-      font-size: 1.75rem;
-      margin-right: auto;
-    }
-    :last-child {
-      transition: color 0.1s;
-    }
-    :last-child:hover {
-      color: #d8dee9;
-    }
+  // padding-inline: 1rem;
+  padding: 1rem;
+  :first-child {
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 1.6rem;
+    margin-right: auto;
   }
-  ul > * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    aspect-ratio: 1/1;
+  :first-child::after {
+    content: "";
+    position: absolute;
+    right: -1rem;
+    height: 4rem;
+    width: 2px;
+    background-color: #d8dee9;
   }
+  :last-child {
+    position: absolute;
+    margin-left: auto;
+  }
+}
+.Navbar > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  aspect-ratio: 1/1;
 }
